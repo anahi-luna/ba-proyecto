@@ -437,7 +437,7 @@ body{
         padding: 0;
     }
     .container-home{
-        background-image: url("/images/first-home.jpg");
+        background-image: url("images/first-home.jpg");
         background-size: cover;
         background-position: center;
         height: 770px; 
@@ -445,7 +445,7 @@ body{
         border-radius: 0px;
     }
     .container-home img {
-        display: block;
+        display: none;
     }
     .box-text-icon-delivery{
         top: 60%;
