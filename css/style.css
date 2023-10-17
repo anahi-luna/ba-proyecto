@@ -444,9 +444,9 @@ body{
         max-height: 800px;
         border-radius: 0px;
     }
-    /* .container-home img {
-        display: none;
-    } */
+    .container-home img {
+        display: block;
+    }
     .box-text-icon-delivery{
         top: 60%;
         left: 10%;
