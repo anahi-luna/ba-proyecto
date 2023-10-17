@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="background-home-navbar"></div>
+    <header class="nav-bar">
+        <!-- Navbar-Mobile -->
+        <nav class="nav-bar-mobile">
+            <div class="container-search-user">
+                <div class="location-user">
+                    <div class="location-text">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Ubicación actual</p>
+                    </div>
+                    <i class="fa-regular fa-circle-user"></i>
+                </div>
+                <form action="" class="nav-bar-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="search" placeholder="search food">
+                </form>
+            </div>
+            <ul class="menu-floating">
+                <li><a href="#home" class="active"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                <li><a href="/pages/cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-bell"></i></a></li>
+            </ul>
+        </nav>
+        <!-- Navbar-Desktop -->
+        <nav class="nav-bar-desktop">
+            <img src="/images/logo.png" alt="logo">
+            <ul class="list-link">
+                <li><a href="#home" class="element-show shadow">Home</a></li>
+                <li><a href="#" class="element-show shadow">Favoritos</a></li>
+                <li><a href="#offer" class="element-show shadow">Ofertas</a></li>
+            </ul>
+            <form action="" class="nav-bar-search shadow-search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" placeholder="search food">
+            </form>
+            <div class="location-text">
+                <i class="fa-solid fa-location-dot element-show shadow"></i>
+                <p class="element-show shadow">Ubicación actual</p>
+            </div>
+            <div class="box-user-bag">
+                <i class="fa-regular fa-circle-user element-show shadow"></i>
+                <i class="fa-solid fa-bag-shopping element-show shadow"></i>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Home -->
+        <section class="home" id="home">
+            <div class="container-home">
+                <img src="/images/first-home.jpg" alt="">
+                <div class="box-text-icon-delivery">
+                    <h1 class="btn-promotion">Promo especial</h1>
+                    <p class="btn-delivery"><i class="fa-solid fa-motorcycle"></i> Delivery</p>
+                </div>
+                <h1 class="title-first-home ">Pollo a la parrilla</h1>
+                <span>con ensalada de pipas</span>
+            </div>
+        </section>
+        <!-- Articles -->
+        <section class="articles" id="offer">
+            <ul class="menu-filter">
+                <li class="list-menu active-list">Carnes</li>
+                <li class="list-menu">Pollos</li>
+                <li class="list-menu">Empanadas</li>
+                <li class="list-menu">Frituras</li>
+                <li class="list-menu">Dulces</li>
+                <li class="list-menu">Ensaladas</li>
+                <li class="list-menu">Pizzas</li>
+            </ul>
+            <div class="container-articles">
+                <article class="articles-box">
+                    <img src="/images/carne-menu.jpg" alt="img-product">
+                    <p class="heart-number"><i class="fa-solid fa-star"></i> 4.5</p>
+                    <div class="box-text-price-btn">
+                        <h1 class="title-article">Bife angosto</h1>
+                        <span>con papas y salsa</span>
+                        <div class="box-price-btn-icon">
+                            <p class="price-article">$2000</p>
+                            <i class="fa-solid fa-plus"></i>
+                            <p class="btn-shop">Comprar</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="articles-box">
+                    <img src="/images/tacos-menu.jpg" alt="img-product">
+                    <p class="heart-number"><i class="fa-solid fa-star"></i> 4.5</p>
+                    <div class="box-text-price-btn">
+                        <h1 class="title-article">Tacos</h1>
+                        <span>con carne y vegetales</span>
+                        <div class="box-price-btn-icon">
+                            <p class="price-article">$ 2000</p>
+                            <i class="fa-solid fa-plus"></i>
+                            <p class="btn-shop">Comprar</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="articles-box">
+                    <img src="/images/pizza-menu.jpg" alt="img-product">
+                    <p class="heart-number"><i class="fa-solid fa-star"></i> 4.5</p>
+                    <div class="box-text-price-btn">
+                        <h1 class="title-article">Pizza</h1>
+                        <span>con peperoni y aceituna</span>
+                        <div class="box-price-btn-icon">
+                            <p class="price-article">$2000</p>
+                            <i class="fa-solid fa-plus"></i>
+                            <p class="btn-shop">Comprar</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="articles-box">
+                    <img src="/images/burger-menu.jpg" alt="img-product">
+                    <p class="heart-number"><i class="fa-solid fa-star"></i> 4.5</p>
+                    <div class="box-text-price-btn">
+                        <h1 class="title-article">Hamburguesa</h1>
+                        <span>con papas y salsa</span>
+                        <div class="box-price-btn-icon">
+                            <p class="price-article">$2000</p>
+                            <i class="fa-solid fa-plus"></i>
+                            <p class="btn-shop">Comprar</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="articles-box">
+                    <img src="/images/carne-menu.jpg" alt="img-product">
+                    <p class="heart-number"><i class="fa-solid fa-star"></i> 4.5</p>
+                    <div class="box-text-price-btn">
+                        <h1 class="title-article">Bife angosto</h1>
+                        <span>con papas y salsa</span>
+                        <div class="box-price-btn-icon">
+                            <p class="price-article">$2000</p>
+                            <i class="fa-solid fa-plus"></i>
+                            <p class="btn-shop">Comprar</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="articles-box">
+                    <img src="/images/tacos-menu.jpg" alt="img-product">
+                    <p class="heart-number"><i class="fa-solid fa-star"></i> 4.5</p>
+                    <div class="box-text-price-btn">
+                        <h1 class="title-article">Tacos</h1>
+                        <span>con carne y vegetales</span>
+                        <div class="box-price-btn-icon">
+                            <p class="price-article">$ 2000</p>
+                            <i class="fa-solid fa-plus"></i>
+                            <p class="btn-shop">Comprar</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="articles-box">
+                    <img src="/images/pizza-menu.jpg" alt="img-product">
+                    <p class="heart-number"><i class="fa-solid fa-star"></i> 4.5</p>
+                    <div class="box-text-price-btn">
+                        <h1 class="title-article">Pizza</h1>
+                        <span>con peperoni y aceituna</span>
+                        <div class="box-price-btn-icon">
+                            <p class="price-article">$2000</p>
+                            <i class="fa-solid fa-plus"></i>
+                            <p class="btn-shop">Comprar</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="articles-box">
+                    <img src="/images/burger-menu.jpg" alt="img-product">
+                    <p class="heart-number"><i class="fa-solid fa-star"></i> 4.5</p>
+                    <div class="box-text-price-btn">
+                        <h1 class="title-article">Hamburguesa</h1>
+                        <span>con papas y salsa</span>
+                        <div class="box-price-btn-icon">
+                            <p class="price-article">$2000</p>
+                            <i class="fa-solid fa-plus"></i>
+                            <p class="btn-shop">Comprar</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="articles-box">
+                    <img src="/images/carne-menu.jpg" alt="img-product">
+                    <p class="heart-number"><i class="fa-solid fa-star"></i> 4.5</p>
+                    <div class="box-text-price-btn">
+                        <h1 class="title-article">Bife angosto</h1>
+                        <span>con papas y salsa</span>
+                        <div class="box-price-btn-icon">
+                            <p class="price-article">$2000</p>
+                            <i class="fa-solid fa-plus"></i>
+                            <p class="btn-shop">Comprar</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="articles-box">
+                    <img src="/images/tacos-menu.jpg" alt="img-product">
+                    <p class="heart-number"><i class="fa-solid fa-star"></i> 4.5</p>
+                    <div class="box-text-price-btn">
+                        <h1 class="title-article">Tacos</h1>
+                        <span>con carne y vegetales</span>
+                        <div class="box-price-btn-icon">
+                            <p class="price-article">$ 2000</p>
+                            <i class="fa-solid fa-plus"></i>
+                            <p class="btn-shop">Comprar</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="articles-box">
+                    <img src="/images/pizza-menu.jpg" alt="img-product">
+                    <p class="heart-number"><i class="fa-solid fa-star"></i> 4.5</p>
+                    <div class="box-text-price-btn">
+                        <h1 class="title-article">Pizza</h1>
+                        <span>con peperoni y aceituna</span>
+                        <div class="box-price-btn-icon">
+                            <p class="price-article">$2000</p>
+                            <i class="fa-solid fa-plus"></i>
+                            <p class="btn-shop">Comprar</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="articles-box">
+                    <img src="/images/burger-menu.jpg" alt="img-product">
+                    <p class="heart-number"><i class="fa-solid fa-star"></i> 4.5</p>
+                    <div class="box-text-price-btn">
+                        <h1 class="title-article">Hamburguesa</h1>
+                        <span>con papas y salsa</span>
+                        <div class="box-price-btn-icon">
+                            <p class="price-article">$2000</p>
+                            <i class="fa-solid fa-plus"></i>
+                            <p class="btn-shop">Comprar</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="container-footer">
+        <div class="box-media-social-about-services">
+            <div class="box-social-about-service">
+                <h1 class="title-first-footer">Redes Sociales</h1>
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+            </div>
+            <div class="box-social-about-service">
+                <h1 class="title-first-footer">Fast Food</h1>
+                <p>Sobre nosotros</p>
+                <p>Sucursales</p>
+            </div>
+            <div class="box-social-about-service">
+                <h1 class="title-first-footer">Atención al Cliente</h1>
+                <p>Condiciones de pagos</p>
+                <p>Problemas de envios, compras</p>
+            </div>
+        </div>
+        <div class="copy-segurity">
+            <h1>Copyright <i class="fa-regular fa-copyright"></i></h1>
+            <h1>Politicas de seguridad</h1>
+        </div>
+    </footer>
+    <script src="/js/home.js"></script>
+</body>
+
+</html>
