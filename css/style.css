@@ -288,7 +288,7 @@ body{
     align-items: center;
     justify-content: space-between;
 }
-.copy-segurity h1 {
+.copy-segurity h4 {
     color: var(--c-white);
     font-size: 14px;
     font-weight: 600;
@@ -440,7 +440,7 @@ body{
         padding: 0;
     }
     .container-home{
-        background-image: url(/ba-proyecto/images/first-home.jpg);
+        background-image: url(../images/first-home.jpg);
         background-size: cover;
         background-position: center;
         height: 770px; 
