@@ -344,7 +344,7 @@ article{
     align-items: center;
     justify-content: space-between;
 }
-.copy-segurity h1 {
+.copy-segurity h4 {
     color: var(--c-white);
     font-size: 14px;
     font-weight: 600;
