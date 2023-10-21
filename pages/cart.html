@@ -4,14 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link-to-font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- link-to-css-cart -->
     <link rel="stylesheet" href="../css/cart.css">
     <title>Document</title>
 </head>
 
 <body>
+    <!-- Nav-Bar -->
     <header class="nav-bar">
         <!-- Navbar-Mobile -->
         <nav class="nav-bar-mobile">
@@ -24,6 +27,8 @@
                 <li><a href="#"><i class="fa-solid fa-bell"></i></a></li>
             </ul>
         </nav>
+        <!-- Navbar-Mobile End-->
+
         <!-- Navbar-Desktop -->
         <nav class="nav-bar-desktop">
             <img src="../images/logo.png" alt="logo">
@@ -45,15 +50,24 @@
                 <a href="../pages/cart.html"><i class="fa-solid fa-bag-shopping element-show shadow"></i></a>
             </div>
         </nav>
+        <!-- Navbar-Desktop End-->
     </header>
+    <!-- Nav-Bar End-->
+
+    <!-- Cart-shopping -->
     <main>
         <div class="container-order-shop">
+            <!-- title-arrow-left-back version-desktop-->
             <div class="box-icon-text-desktop">
                 <a href="../index.html"><i class="fa-solid fa-chevron-left"></i></a>
                 <h2 class="title-order">Orden</h2>
             </div>
+            <!-- title-arrow-left-back version-desktop END-->
+
             <div class="container-order-articles-cart">
+                <!-- Component-of-list-products-and-swicther -->
                 <div class="container-articles-switcher">
+                    <!-- Container-switcher-direction -->
                     <div class="container-delivery-pick-up-location">
                         <div class="switch">
                             <input type="checkbox" id="switcher">
@@ -64,6 +78,9 @@
                             <h2 class="direction-number">Carabobo 2001, <span>Caballito</span></h2>
                         </div>
                     </div>
+                    <!-- Container-switcher-direction END-->
+
+                    <!-- List-products-cart-of-shopping -->
                     <div class="container-articles">
                         <article>
                             <div class="box-img-description-stock">
@@ -138,7 +155,11 @@
                             </div>
                         </article>
                     </div>
+                    <!-- List-products-cart-of-shopping End-->
                 </div>
+                <!-- Component-of-list-products-and-swicther End-->
+
+                <!-- Container-purchase-summary -->
                 <div class="resumen-order-shop">
                     <h4 class="title-resumen">Resumen de compra</h4>
                     <div class="box-orden-total">
@@ -158,9 +179,12 @@
                     <a href="../index.html" class="btn-add-finale" id="add-article">Agregar más</a>
                     <a href="#" class="btn-add-finale">Finalizar</a>
                 </div>
+                <!-- Container-purchase-summary End-->
             </div>
         </div>
     </main>
+    <!-- Cart-shopping End-->
+
     <!-- FOOTER -->
     <footer class="container-footer">
         <div class="box-media-social-about-services">
@@ -186,6 +210,7 @@
             <h4>Politicas de seguridad</h4>
         </div>
     </footer>
+    <!-- Footer End -->
 </body>
 
 </html>

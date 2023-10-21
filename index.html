@@ -4,17 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link-to-font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- link-to-css-styles -->
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 
 <body>
     <div class="background-home-navbar"></div>
+    <!-- Nav-Bar -->
     <header class="nav-bar">
-        <!-- Navbar-Mobile -->
+        <!-- Navbar-Mobile start-->
         <nav class="nav-bar-mobile">
             <div class="container-search-user">
                 <div class="location-user">
@@ -36,7 +39,8 @@
                 <li><a href="#"><i class="fa-solid fa-bell"></i></a></li>
             </ul>
         </nav>
-        <!-- Navbar-Desktop -->
+        <!-- Navbar-Mobile end -->
+        <!-- Navbar-Desktop start-->
         <nav class="nav-bar-desktop">
             <img src="images/logo.png" alt="logo">
             <ul class="list-link">
@@ -54,10 +58,14 @@
             </div>
             <div class="box-user-bag">
                 <i class="fa-regular fa-circle-user element-show shadow"></i>
-                <a href="/pages/cart.html"><i class="fa-solid fa-bag-shopping element-show shadow"></i></a>
+                <a href="pages/cart.html"><i class="fa-solid fa-bag-shopping element-show shadow"></i></a>
             </div>
         </nav>
+        <!-- Navbar-Desktop end-->
     </header>
+    <!-- Nav-Bar End-->
+
+    <!-- Main -->
     <main>
         <!-- Home -->
         <section class="home" id="home">
@@ -71,8 +79,10 @@
                 <span>con ensalada de pipas</span>
             </div>
         </section>
+        <!-- Home-End -->
         <!-- Articles -->
         <section class="articles" id="offer">
+            <!-- List-menu-filter -->
             <ul class="menu-filter">
                 <li class="list-menu active-list">Carnes</li>
                 <li class="list-menu">Pollos</li>
@@ -82,6 +92,7 @@
                 <li class="list-menu">Ensaladas</li>
                 <li class="list-menu">Pizzas</li>
             </ul>
+            <!-- List-menu-filter-end -->
             <div class="container-articles">
                 <article class="articles-box">
                     <a href="pages/detail.html">
@@ -265,7 +276,10 @@
                 </article>
             </div>
         </section>
+        <!-- Articles-End -->
     </main>
+    <!-- Main-End -->
+    
     <!-- FOOTER -->
     <footer class="container-footer">
         <div class="box-media-social-about-services">
@@ -291,6 +305,9 @@
             <h4>Politicas de seguridad</h4>
         </div>
     </footer>
+    <!-- Footer-End -->
+
+    <!-- Script-to-javascript -->
     <script src="js/home.js"></script>
 </body>
 
