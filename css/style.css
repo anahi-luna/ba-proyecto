@@ -105,10 +105,14 @@ body{
 .active i {
     color: var(--c-brand);
 }
+/* Navbar-Mobile END*/
+
 /* Navbar-desktop */
 .nav-bar-desktop{
     display: none;
 }
+
+/* Main */
 /* HOME */
 .home{
     padding: 5px 20px;
@@ -157,11 +161,13 @@ body{
 .container-home span{
     display: none;
 }
+/* HOME  END */
 
-/* Articles */
+/* section of Articles */
 .articles{
     padding: 10px 20px;
 }
+/* Styles of list menu */
 .menu-filter{
     display: flex;
     flex-direction: row;
@@ -184,6 +190,9 @@ body{
     border-radius: 8px;
     color: var(--c-white);
 }
+/* Styles of list menu End */
+
+/* Styles container of articles */
 .container-articles{
     display: flex;
     box-sizing: border-box;
@@ -258,6 +267,9 @@ body{
 .btn-shop{
     display: none;
 }
+/* Styles container of articles END*/
+/* section of Articles End*/
+
 /* FOOTER */
 .container-footer{
     background-color: var(--c-body);
@@ -293,8 +305,10 @@ body{
     font-size: 14px;
     font-weight: 600;
 }
+/* FOOTER END*/
 
 @media(min-width:481px){
+    /* Section of home */
     .btn-delivery{
         display: block;
         background-color: #ff5218bc;
@@ -315,6 +329,9 @@ body{
         font-size: 20px;
         font-weight: 700;
     }
+    /* Section of home End*/
+
+    /* Section of articles */
     .title-article{
         font-size: 18px;
     }
@@ -347,8 +364,10 @@ body{
         border-radius: 10px;
         font-weight: 600;
     }
+    /* Section of articles End*/
 }
 @media(min-width:600px){
+    /* Size of box article */
     .articles-box{
         width: 28%;
     }
@@ -358,6 +377,7 @@ body{
     .nav-bar-mobile{
         display: none;
     }
+    /* Background of Narbar */
     header{
         position: fixed;
         width: 100%;
@@ -366,6 +386,7 @@ body{
         box-sizing: border-box;
     }
     
+    /* NavBar version desktop */
     .nav-bar-desktop{
         display: block;
         width: 100%;
@@ -398,27 +419,6 @@ body{
     .list-link li a:hover{
         border-bottom: 4px solid var(--c-brand);
     }
-    /* scrolled-nav-bar*/
-    .scrolled{
-        background-color: var(--c-white);
-        box-shadow: var(--shadow);
-    }
-    .scrolled a {
-        color: var(--c-body) !important;
-    }
-    .scrolled p {
-        color: var(--c-body) !important;
-    }
-    .scrolled .nav-bar-search{
-        border: 1px solid var(--c-light);
-    }
-    .shadow{
-        text-shadow: var(--text-shadow);
-    }
-    
-    .shadow-search{
-        box-shadow: var(--shadow);
-    }
     .location-text{
         padding-left: 5px;
     }
@@ -434,7 +434,35 @@ body{
         font-size: 20px;
         margin: 0px 0px 0px 20px;
     }
-    
+    /* NavBar version desktop END*/
+
+    /* scrolled-nav-bar*/
+    .scrolled{
+        background-color: var(--c-white);
+        box-shadow: var(--shadow);
+    }
+    .scrolled a {
+        color: var(--c-body) !important;
+    }
+    .scrolled p {
+        color: var(--c-body) !important;
+    }
+    .scrolled .nav-bar-search{
+        border: 1px solid var(--c-light);
+    }
+    /* scrolled-nav-bar End*/
+
+    /* shadow-text in NavBar */
+    .shadow{
+        text-shadow: var(--text-shadow);
+    }
+    .shadow-search{
+        box-shadow: var(--shadow);
+    }
+    /* shadow-text in NavBar End*/
+
+    /* Nav-Bar End */
+
     /* Home-desktop */
     .home{
         padding: 0;
@@ -467,7 +495,9 @@ body{
         left: 10%;
         font-size: 40px;
     }
-    /* Articles */
+    /* Home-desktop End*/
+
+    /* Section Articles */
     .menu-filter{
         max-width: 1000px;
         padding: 10px 0px;
@@ -483,6 +513,8 @@ body{
     .articles-box{
         width: 22%;
     }
+    /* Section Articles End*/
+
     /* Footer */
     .container-footer{
         padding-bottom: 20px;
@@ -499,10 +531,10 @@ body{
         max-width: 1200px;
         margin: auto;
     }
-    
+    /* Footer End*/
 }
 @media(min-width:1200px){
-    /*Nav-Bar*/
+    /*Nav-Bar version desktop*/
     .nav-bar-desktop{
         max-width: 1200px;
         margin: auto;
@@ -522,4 +554,5 @@ body{
     .fa-circle-user, .fa-bag-shopping{
         font-size: 25px;
     }
+    /*Nav-Bar version desktop End*/
 }

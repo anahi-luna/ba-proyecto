@@ -46,13 +46,14 @@ body {
     font-size: 20px;
     cursor: pointer;
 }
+/* Navbar-mobile End*/
 
 /* Navbar-desktop */
 .nav-bar-desktop {
     display: none;
 }
 
-/* Main */
+/* Main Detail article*/
 .box-title-detail-next {
     display: none;
 }
@@ -69,9 +70,6 @@ body {
     box-sizing: border-box;
 }
 
-/* .container-title-price-description{
-    border: 1px dashed black;
-} */
 .container-title-price-description .fa-heart {
     display: none;
 }
@@ -178,7 +176,7 @@ body {
     color: var(--c-brand) !important;
     border: 1px solid var(--c-brand) !important;
 }
-
+/* Component-price-product-version-mobile */
 .box-bottom-price-btn {
     position: sticky;
     bottom: 0;
@@ -217,6 +215,9 @@ body {
     margin: 0;
     font-weight: 500;
 }
+/* Component-price-product-version-mobile  End*/
+
+/* Main Detail article End*/
 
 /* FOOTER */
 .container-footer {
@@ -259,6 +260,8 @@ body {
     font-size: 14px;
     font-weight: 600;
 }
+/* FOOTER END*/
+
 
 @media(min-width:840px) {
 
@@ -267,6 +270,7 @@ body {
         display: none;
     }
 
+    /* Background of Narbar */
     header {
         position: fixed;
         width: 100%;
@@ -277,6 +281,7 @@ body {
         box-sizing: border-box;
     }
 
+    /* NavBar version desktop */
     .nav-bar-desktop {
         display: block;
         width: 100%;
@@ -361,7 +366,9 @@ body {
         font-size: 20px;
         margin: 0px 0px 0px 20px;
     }
-    /* Main */
+    /* NavBar version desktop END*/
+
+    /* Main Detail article*/
     main {
         padding: 100px 20px;
     }
@@ -429,6 +436,8 @@ body {
         font-weight: 500;
         cursor: pointer;
     }
+    /* Main Detail article End*/
+
     /* Footer */
     .container-footer {
         padding-bottom: 20px;
@@ -447,6 +456,7 @@ body {
         max-width: 1200px;
         margin: auto;
     }
+    /* Footer End*/
 }
 
 @media(min-width:1200px) {
@@ -476,6 +486,8 @@ body {
     .fa-bag-shopping {
         font-size: 25px;
     }
+    /*Nav-Bar End*/
+
     /* Main */
     .box-article-img-description img {
         width: 60%;
