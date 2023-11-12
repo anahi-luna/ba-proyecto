@@ -67,6 +67,17 @@ body {
 .active i {
     color: var(--c-brand);
 }
+.counter-cart{
+    position: absolute;
+    top: -38%;
+    right: 30%;
+    background-color: var(--c-brand);
+    color: var(--c-white);
+    padding: 5px 8px;
+    border-radius: 50%;
+    font-size: 10px;
+    box-shadow: var(--shadow);
+}
 /* Navbar-mobile End*/
 
 /* Navbar-desktop */
@@ -470,6 +481,7 @@ article{
         padding-left: 5px;
     }
     .box-user-bag {
+        position: relative;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -481,6 +493,11 @@ article{
         color: var(--c-brand);
         font-size: 20px;
         margin: 0px 0px 0px 20px;
+    }
+    .counter-cart{
+        position: absolute;
+        top: -100%;
+        right: -20%;
     }
     /* NavBar version desktop END*/
 
