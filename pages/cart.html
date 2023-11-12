@@ -23,7 +23,10 @@
             <ul class="menu-floating">
                 <li><a href="../index.html" class="active"><i class="fa-solid fa-house"></i></a></li>
                 <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
-                <li><a href="../pages/cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <li>
+                    <a href="../pages/cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+                    <p class="counter-cart counter-mobile">0</p>
+                </li>
                 <li><a href="#"><i class="fa-solid fa-bell"></i></a></li>
             </ul>
         </nav>
@@ -48,6 +51,7 @@
             <div class="box-user-bag">
                 <i class="fa-regular fa-circle-user "></i>
                 <a href="../pages/cart.html"><i class="fa-solid fa-bag-shopping element-show shadow"></i></a>
+                <p class="counter-cart counter-desktop">0</p>
             </div>
         </nav>
         <!-- Navbar-Desktop End-->
@@ -70,7 +74,7 @@
                     <!-- Container-switcher-direction -->
                     <div class="container-delivery-pick-up-location">
                         <div class="switch">
-                            <input type="checkbox" id="switcher">
+                            <input type="checkbox" id="switcher" >
                             <label for="switcher"></label>
                         </div>
                         <div class="box-location">
@@ -81,99 +85,27 @@
                     <!-- Container-switcher-direction END-->
 
                     <!-- List-products-cart-of-shopping -->
-                    <div class="container-articles">
-                        <article>
-                            <div class="box-img-description-stock">
-                                <img src="../images/burger-menu.jpg" alt="img-1">
-                                <div class="box-text-articles">
-                                    <h3 class="title-articles">Hamburguesa</h3>
-                                    <p class="character-article">completa con papas</p>
-                                </div>
-                                <div class="box-plus-minus">
-                                    <i class="fa-solid fa-plus"></i>
-                                    <p>1</p>
-                                    <i class="fa-solid fa-minus"></i>
-                                </div>
-                            </div>
-                            <div class="container-delete-price">
-                                <div class="box-price-delete">
-                                    <p class="text-delete-price show-text">Precio</p>
-                                    <p class="price-number">$ 2000</p>
-                                </div>
-                                <div class="box-price-delete">
-                                    <i class="fa-regular fa-circle-xmark"></i>
-                                    <p class="text-delete-price">Eliminar</p>
-                                </div>
-                            </div>
-                        </article>
-                        <article>
-                            <div class="box-img-description-stock">
-                                <img src="../images/tacos-menu.jpg" alt="img-2">
-                                <div class="box-text-articles">
-                                    <h3 class="title-articles">Tacos</h3>
-                                    <p class="character-article">con carne y salsas</p>
-                                </div>
-                                <div class="box-plus-minus">
-                                    <i class="fa-solid fa-plus"></i>
-                                    <p>1</p>
-                                    <i class="fa-solid fa-minus"></i>
-                                </div>
-                            </div>
-                            <div class="container-delete-price">
-                                <div class="box-price-delete">
-                                    <p class="text-delete-price show-text">Precio</p>
-                                    <p class="price-number">$ 2000</p>
-                                </div>
-                                <div class="box-price-delete">
-                                    <i class="fa-regular fa-circle-xmark"></i>
-                                    <p class="text-delete-price">Eliminar</p>
-                                </div>
-                            </div>
-                        </article>
-                        <article>
-                            <div class="box-img-description-stock">
-                                <img src="../images/pizza-menu.jpg" alt="img-3">
-                                <div class="box-text-articles">
-                                    <h3 class="title-articles">Pizza</h3>
-                                    <p class="character-article">con peperoni</p>
-                                </div>
-                                <div class="box-plus-minus">
-                                    <i class="fa-solid fa-plus"></i>
-                                    <p>1</p>
-                                    <i class="fa-solid fa-minus"></i>
-                                </div>
-                            </div>
-                            <div class="container-delete-price">
-                                <div class="box-price-delete">
-                                    <p class="text-delete-price show-text">Precio</p>
-                                    <p class="price-number">$ 2000</p>
-                                </div>
-                                <div class="box-price-delete">
-                                    <i class="fa-regular fa-circle-xmark"></i>
-                                    <p class="text-delete-price">Eliminar</p>
-                                </div>
-                            </div>
-                        </article>
+                    <div class="container-articles" id="container-articles">
                     </div>
                     <!-- List-products-cart-of-shopping End-->
                 </div>
                 <!-- Component-of-list-products-and-swicther End-->
 
                 <!-- Container-purchase-summary -->
-                <div class="resumen-order-shop">
+                <div class="resumen-order-shop" id="order-of-shopping">
                     <h4 class="title-resumen">Resumen de compra</h4>
                     <div class="box-orden-total">
                         <div class="text-price-shop" id="border-bottom-resumen">
-                            <p class="total-sub-delivery">Sub total</p>
-                            <p class="order-number-price">$2000</p>
+                            <p class="total-sub-delivery" >Sub total</p>
+                            <p class="order-number-price" id="value-sub-total">$2000</p>
                         </div>
                         <div class="text-price-shop" id="border-bottom-resumen">
                             <p class="total-sub-delivery">Delivery</p>
-                            <p class="order-number-price">$2000</p>
+                            <p class="order-number-price" id="value-delivery">$2000</p>
                         </div>
                         <div class="text-price-shop">
                             <p class="total-sub-delivery">Total a pagar</p>
-                            <p class="order-number-price">$2000</p>
+                            <p class="order-number-price" id="total-value">$2000</p>
                         </div>
                     </div>
                     <a href="../index.html" class="btn-add-finale" id="add-article">Agregar más</a>
@@ -211,6 +143,7 @@
         </div>
     </footer>
     <!-- Footer End -->
+    <script src="../js/cart.js"></script>
 </body>
 
 </html>
