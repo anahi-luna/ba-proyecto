@@ -5,6 +5,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     const containerImgEmpty= document.querySelector('.container-img-empty');
     const counterMobile = document.querySelector('.counter-mobile');
     const counterDesktop = document.querySelector('.counter-desktop');
+    const btnOpenModal= document.querySelector('#btn-open-modal');
+    const btnRedirect = document.querySelector('#redirectButton');
+    const modal= document.querySelector('#modal');
     const drawCart = async (dataCart) => {
         dataCart.forEach(product => {
             const article = document.createElement('article');
@@ -139,4 +142,17 @@ document.addEventListener('DOMContentLoaded', async () => {
         return data;
     }
     updateCart();
+    const openModal=()=>{
+        btnOpenModal.addEventListener('click', ()=>{
+            modal.style.display='block';
+        });
+    }
+    openModal();
+    const redirectHome=async ()=>{
+        btnRedirect.addEventListener('click', ()=>{
+            localStorage.removeItem('cart');
+            window.location.href='../index.html';
+        })
+    }
+    redirectHome();
 })
