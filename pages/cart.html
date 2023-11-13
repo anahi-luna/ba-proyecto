@@ -10,7 +10,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- link-to-css-cart -->
     <link rel="stylesheet" href="../css/cart.css">
-    <title>Document</title>
+    <title>cart</title>
 </head>
 
 <body>
@@ -60,7 +60,10 @@
 
     <!-- Cart-shopping -->
     <main>
-        <div class="container-order-shop">
+        <div class="container-img-empty" style="display: none;">
+            <img src="../images/empty-cart.png" class="img-cart-empty" alt="cart-img">
+        </div>
+        <div class="container-order-shop" >
             <!-- title-arrow-left-back version-desktop-->
             <div class="box-icon-text-desktop">
                 <a href="../index.html"><i class="fa-solid fa-chevron-left"></i></a>
@@ -143,6 +146,13 @@
         </div>
     </footer>
     <!-- Footer End -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h4>Compra Finalizada</h4>
+            <p>Gracias por comprar en FAST FOOD</p>
+            <button id="redirectButton">Ir a la Tienda</button>
+        </div>
+    </div>
     <script src="../js/cart.js"></script>
 </body>
 

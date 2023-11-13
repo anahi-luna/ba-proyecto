@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', async () => {
     const getCartList = JSON.parse(localStorage.getItem('cart')) || [];
     const containerCartList = document.getElementById('container-articles');
+    const mainPagesCart= document.querySelector('.container-order-shop');
+    const containerImgEmpty= document.querySelector('.container-img-empty');
     const counterMobile = document.querySelector('.counter-mobile');
     const counterDesktop = document.querySelector('.counter-desktop');
     const drawCart = async (dataCart) => {
@@ -30,7 +32,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                     </div>
                 </div>
             `
-            containerCartList.appendChild(article)
+            containerCartList.appendChild(article);
             return containerCartList;
         });
     }
@@ -103,7 +105,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const saveLocal = (cartList) => {
         localStorage.setItem('cart', JSON.stringify(cartList))
     }
-    const counterCart = (cartList) => {
+    const counterCart = async (cartList) => {
         const cartLength = cartList.length;
         localStorage.setItem('cartLength', JSON.stringify(cartLength));
         if(cartLength > 0){
@@ -116,6 +118,15 @@ document.addEventListener('DOMContentLoaded', async () => {
             counterDesktop.style.display='none';
         }
     }
+    const showBackgroundCart= async(cartLength)=>{
+        if(cartLength > 0){
+            containerImgEmpty.style.display='none';
+            mainPagesCart.style.display='block';
+        }else{
+            containerImgEmpty.style.display='block';
+            mainPagesCart.style.display='none';
+        }
+    }
     const updateCart = async () => {
         containerCartList.innerHTML = '';
         const dataCartLocal = await getCartList;
@@ -123,7 +134,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         await deleteProduct(dataCartLocal);
         await sendUpdateOfCount(dataCartLocal);
         await resumenOrderShop(dataCartLocal);
-        await counterCart(dataCartLocal)
+        await counterCart(dataCartLocal);
+        await showBackgroundCart(dataCartLocal.length);
         return data;
     }
     updateCart();
