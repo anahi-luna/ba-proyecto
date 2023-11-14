@@ -82,7 +82,7 @@ const drawListOfArticles = async () => {
         article.classList.add('articles-box') //le agrega la clase articles-box
         //Dibuja dentro de article sus propiedades
         article.innerHTML = `
-                <a href="pages/detail.html">
+                <a href="pages/detail.html?id=${product.id}">
                 <img src="${product.images}" alt="img-product">
                 <p class="heart-number"><i class="fa-solid fa-star"></i> 4.5</p>
                 </a>
@@ -130,7 +130,6 @@ shopProduct();
 const counterCart = () => {
     const cartLength = cart.length;
     localStorage.setItem('cartLength', JSON.stringify(cartLength));
-    console.log(cartLength);
     if(cartLength > 0){
         desktopCounter.style.display='block';
         desktopCounter.innerText=cartLength;
