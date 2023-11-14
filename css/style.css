@@ -27,9 +27,6 @@ body{
 }
 
 /* Navbar-Mobile */
-/* .nav-bar-mobile{
-    border: 1px solid blue;
-} */
 .container-search-user{
     padding: 20px 20px 15px 20px;
 }
@@ -44,7 +41,6 @@ body{
     color: var(--c-brand);
 }
 .location-text{
-    /* border: solid 1px salmon; */
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -190,11 +186,19 @@ body{
     margin: 2px 0px 10px 0px;
 }
 .list-menu{
+    margin: 3px;
     font-size: 12px;
     font-weight: 600;
     padding: 5px 10px;
     color: var(--c-dark);
     cursor: pointer;
+    transition: var(--transition);
+    border-radius: 8px;
+}
+.list-menu:hover{
+    outline: 1px solid var(--c-brand);
+    background-color: #ff52183e;
+    color: var(--c-brand);
 }
 .active-list{
     background-color: var(--c-brand);
@@ -374,6 +378,7 @@ body{
         padding: 5px 0px;
         border-radius: 10px;
         font-weight: 600;
+        cursor: pointer;
     }
     /* Section of articles End*/
 }

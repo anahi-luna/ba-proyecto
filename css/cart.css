@@ -289,7 +289,6 @@ article{
     color: var(--c-body);
 }
 .box-plus-minus{
-    /* border: 1px dashed blue; */
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -309,13 +308,11 @@ article{
     border-radius: 5px;
 }
 .container-delete-price{
-    /* border: 1px dashed pink; */
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
 }
 .box-price-delete{
-    /* border: 1px solid orange; */
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -327,6 +324,7 @@ article{
     font-weight: 500;
     margin: 0;
     color: var(--c-light);
+    cursor: pointer;
 }
 .price-number,.fa-circle-xmark{
     color: var(--c-brand);
